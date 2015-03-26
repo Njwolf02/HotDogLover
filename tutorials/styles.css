@@ -1,0 +1,31 @@
+.thumbnails > li {
+    float: left;
+    margin-bottom: 18px;
+    margin-left: 20px;
+    height: 200px;
+}
+
+#hover-img .caption-btm {
+background: rgba(4, 186, 183, 0.6);
+width: 70%;   ********
+height: 60px;
+position: absolute;
+bottom: 4px;
+color: #fff;
+display: none;
+width: 100%;    ********
+}
+
+.page-header{
+	margin-top: 0;
+}
+
+.panel-body {
+	padding-top: 0;
+}
+
+.featuredImg {
+	margin-bottom: 15px;
+}
+
+body { padding-bottom: 70px;}
