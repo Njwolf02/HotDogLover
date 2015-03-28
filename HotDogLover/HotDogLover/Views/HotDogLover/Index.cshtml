@@ -17,52 +17,17 @@
         <th>
             @Html.DisplayNameFor(model => model.Bio)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.pastPark)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ImageUrl)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CurrentDog)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.LastPark)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.LastParkDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Score)
-        </th>
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
         <td>
+
             @Html.DisplayFor(modelItem => item.Name)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Bio)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.pastPark)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ImageUrl)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CurrentDog)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LastPark)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LastParkDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Score)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
