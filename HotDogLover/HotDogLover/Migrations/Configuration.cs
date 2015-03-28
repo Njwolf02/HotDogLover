@@ -30,12 +30,12 @@ namespace HotDogLover.Migrations
             context.Contacts.AddOrUpdate(p => p.Name,
            new Contact
            {
-               Name = "Debra Garcia",
+               Name = "Patrick Star",
                Bio = "I like walking my dog!",
-               pastPark = "Redmond",
-               ImageUrl = "Test",
-               CurrentDog = "Lad",
-               LastPark = "Street",
+               pastPark = "Krusty Crabs Park",
+               ImageUrl = "https://pbs.twimg.com/profile_images/427828658477494272/ng9_Kb4P.jpeg",
+               CurrentDog = "Worm",
+               LastPark = "Krusty Crabs Park",
                LastParkDate = DateTime.Today,
                Score = 3
            }

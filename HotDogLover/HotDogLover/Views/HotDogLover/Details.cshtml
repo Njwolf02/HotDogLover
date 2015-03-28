@@ -6,41 +6,12 @@
 
 <h2>Details</h2>
 
-<div>
-    <h4>Contact</h4>
-    <hr />
+<div class="col-md-4">
+    <img src="@Url.Content(Model.ImageUrl)" alt="Image" width="250" />
+    <!--Walker Info-->
+    <br />
+    <h4>Walker Information</h4>
     <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Bio)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Bio)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.pastPark)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.pastPark)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ImageUrl)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ImageUrl)
-        </dd>
 
         <dt>
             @Html.DisplayNameFor(model => model.CurrentDog)
@@ -75,6 +46,43 @@
         </dd>
 
     </dl>
+</div>
+
+<div class="col-md-8">
+    <div>
+        <h4>Walker Details</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Bio)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Bio)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.pastPark)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.pastPark)
+            </dd>
+
+
+
+        </dl>
+    </div>
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
